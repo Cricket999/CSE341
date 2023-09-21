@@ -17,7 +17,6 @@ async function getContactById(req) {
     query = {"_id" : new ObjectId(req.params.id)}
     result = await client.db("CSE341DB1").collection("W02 Collection").findOne(query);
     final = JSON.stringify(result)
-    console.log(result)
     return final;
 }
 
