@@ -1,4 +1,18 @@
+// Local Routes
 GET http://localhost:3000/contacts/all
-
+###
 GET http://localhost:3000/contacts/650ab257f809c6756bf2d83e
+###
+GET http://localhost:3000/contacts/650ab7f9f809c6756bf2d840
+###
+GET http://localhost:3000/contacts/650ab816f809c6756bf2d841
 
+// Deployment Routes
+###
+GET https://cse-341-zwc9.onrender.com/contacts/all
+###
+GET https://cse-341-zwc9.onrender.com/contacts/650ab257f809c6756bf2d83e
+###
+GET https://cse-341-zwc9.onrender.com/contacts/650ab7f9f809c6756bf2d840
+###
+GET https://cse-341-zwc9.onrender.com/contacts/650ab816f809c6756bf2d841
