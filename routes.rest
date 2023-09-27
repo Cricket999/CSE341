@@ -37,13 +37,12 @@ GET https://cse-341-zwc9.onrender.com/contacts/650ab816f809c6756bf2d841
 ###
 POST https://cse-341-zwc9.onrender.com/contacts/add
 
-
 // PUT Route
 // Remember to paste the desired ID into the end of this.
 ###
-PUT http://localhost:3000/contacts/65148790236456a70451342d
+PUT https://cse-341-zwc9.onrender.com/contacts/6514aa599211ccd4725ce741
 
 // DELETE Route
 // Remember to paste the desired ID into the end of this.
 ###
-DELETE http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
+DELETE https://cse-341-zwc9.onrender.com/contacts/6514aa599211ccd4725ce741
