@@ -24,6 +24,7 @@ async function addContact(req) {
     await client.connect();
     result = await client.db("CSE341DB1").collection("W02 Collection").insertOne(req.body);
     final = JSON.stringify(result);
+    res.status(201)
     return final;
 }
 
@@ -46,7 +47,7 @@ async function deleteContact(req, res) {
     query = {"_id" : new ObjectId(req.params.id)};
     result = await client.db("CSE341DB1").collection("W02 Collection").findOneAndDelete(query);
     final = JSON.stringify(result);
-    res.status(204)
+    res.status(200)
     return final;
 }
 
