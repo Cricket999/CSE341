@@ -37,7 +37,7 @@ async function editContact(req, res) {
         "favoriteColor": req.body.favoriteColor,
         "birthday": req.body.birthday}});
     final = JSON.stringify(result);
-    res.status = 204
+    res.status(204)
     return final;
 }
 
@@ -46,7 +46,7 @@ async function deleteContact(req, res) {
     query = {"_id" : new ObjectId(req.params.id)};
     result = await client.db("CSE341DB1").collection("W02 Collection").findOneAndDelete(query);
     final = JSON.stringify(result);
-    res.status = 204
+    res.status(204)
     return final;
 }
 
