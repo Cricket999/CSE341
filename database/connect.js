@@ -20,7 +20,7 @@ async function getContactById(req) {
     return final;
 }
 
-async function addContact(req) {
+async function addContact(req, res) {
     await client.connect();
     result = await client.db("CSE341DB1").collection("W02 Collection").insertOne(req.body);
     final = JSON.stringify(result);
