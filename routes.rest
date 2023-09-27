@@ -1,4 +1,5 @@
 // Local Routes
+// GET Routes
 GET http://localhost:3000/contacts/all
 ###
 GET http://localhost:3000/contacts/650ab257f809c6756bf2d83e
@@ -7,7 +8,22 @@ GET http://localhost:3000/contacts/650ab7f9f809c6756bf2d840
 ###
 GET http://localhost:3000/contacts/650ab816f809c6756bf2d841
 
+// POST Route
+###
+POST http://localhost:3000/contacts/add
+
+// PUT Route
+// Remember to paste the desired ID into the end of this.
+###
+PUT http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
+
+// DELETE Route
+// Remember to paste the desired ID into the end of this.
+###
+DELETE http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
+
 // Deployment Routes
+// GET Routes
 ###
 GET https://cse-341-zwc9.onrender.com/contacts/all
 ###
@@ -16,3 +32,18 @@ GET https://cse-341-zwc9.onrender.com/contacts/650ab257f809c6756bf2d83e
 GET https://cse-341-zwc9.onrender.com/contacts/650ab7f9f809c6756bf2d840
 ###
 GET https://cse-341-zwc9.onrender.com/contacts/650ab816f809c6756bf2d841
+
+// POST Route
+###
+POST https://cse-341-zwc9.onrender.com/contacts/add
+
+
+// PUT Route
+// Remember to paste the desired ID into the end of this.
+###
+PUT http://localhost:3000/contacts/65148790236456a70451342d
+
+// DELETE Route
+// Remember to paste the desired ID into the end of this.
+###
+DELETE http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
