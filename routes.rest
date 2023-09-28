@@ -11,16 +11,34 @@ GET http://localhost:3000/contacts/650ab816f809c6756bf2d841
 // POST Route
 ###
 POST http://localhost:3000/contacts/add
+content-type: application/json
+
+{
+        "firstName": "Elizabeth",
+        "lastName": "Beatty",
+        "email": "Not Present",
+        "favoriteColor": "Green",
+        "birthday": "Jul 29"
+}
 
 // PUT Route
 // Remember to paste the desired ID into the end of this.
 ###
-PUT http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
+PUT http://localhost:3000/contacts/65160fbac396764d5437404e
+content-type: application/json
+
+{
+        "firstName": "Zoe",
+        "lastName": "Beatty",
+        "email": "Not Present",
+        "favoriteColor": "Unknown",
+        "birthday": "Unknown"
+}
 
 // DELETE Route
 // Remember to paste the desired ID into the end of this.
 ###
-DELETE http://localhost:3000/contacts/6514a7ca35dcee46e8722f36
+DELETE http://localhost:3000/contacts/65160fbac396764d5437404e
 
 // Deployment Routes
 // GET Routes
@@ -36,13 +54,31 @@ GET https://cse-341-zwc9.onrender.com/contacts/650ab816f809c6756bf2d841
 // POST Route
 ###
 POST https://cse-341-zwc9.onrender.com/contacts/add
+content-type: application/json
+
+{
+        "firstName": "Elizabeth",
+        "lastName": "Beatty",
+        "email": "Not Present",
+        "favoriteColor": "Green",
+        "birthday": "Jul 29"
+}
 
 // PUT Route
 // Remember to paste the desired ID into the end of this.
 ###
-PUT https://cse-341-zwc9.onrender.com/contacts/6514aa599211ccd4725ce741
+PUT https://cse-341-zwc9.onrender.com/contacts/6514af8189a12f37f34d6298
+content-type: application/json
+
+{
+        "firstName": "Zoe",
+        "lastName": "Beatty",
+        "email": "Not Present",
+        "favoriteColor": "Unknown",
+        "birthday": "Unknown"
+}
 
 // DELETE Route
 // Remember to paste the desired ID into the end of this.
 ###
-DELETE https://cse-341-zwc9.onrender.com/contacts/6514aa599211ccd4725ce741
+DELETE https://cse-341-zwc9.onrender.com/contacts/6514af8189a12f37f34d6298
