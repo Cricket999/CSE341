@@ -5,10 +5,11 @@
     "title": "API",
     "description": "CSE341 API"
   },
-  "host": "https://cse-341-zwc9.onrender.com",
+  "host": "cse-341-zwc9.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
