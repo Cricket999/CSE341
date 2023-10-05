@@ -5,7 +5,7 @@
     "title": "API",
     "description": "CSE341 API"
   },
-  "host": "localhost:3000",
+  "host": "https://cse-341-zwc9.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
@@ -21,7 +21,7 @@
         }
       }
     },
-    "/contacts/all": {
+    "/contacts/": {
       "get": {
         "description": "",
         "responses": {
@@ -29,59 +29,7 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/contacts/{id}": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       },
-      "put": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/contacts/add": {
       "post": {
         "description": "",
         "parameters": [
@@ -129,6 +77,96 @@
           },
           "201": {
             "description": "Created"
+          }
+        }
+      }
+    },
+    "/contacts/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "type": "string",
+                  "example": "Zoe"
+                },
+                "lastName": {
+                  "type": "string",
+                  "example": "Beatty"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "Not Present"
+                },
+                "favoriteColor": {
+                  "type": "string",
+                  "example": "Unknown"
+                },
+                "birthday": {
+                  "type": "string",
+                  "example": "Unknown"
+                }
+              },
+              "required": [
+                "firstName",
+                "lastName",
+                "email",
+                "favoriteColor",
+                "birthday"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
